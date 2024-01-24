@@ -1,13 +1,21 @@
 //function () {}
 
-function entry() {
+function entry(data) {
 
-    let data = prompt("Type Number", "");
-    if (data != )
+    let data = Number(prompt("Type Number", "!Number.isNaN"));
+    if (data != null) {
+        document.getElementById("data").innerHTML = "!Number.isNaN" ;
+    }
 
 }
 
-
+function entry(num) {
+    let num = 0;
+    if (input <= 9) {
+        console.log(num);
+        num = num + "input";
+    }
+}
 
 function addition(num) {
 
