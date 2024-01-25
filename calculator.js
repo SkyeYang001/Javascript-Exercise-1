@@ -1,51 +1,27 @@
 //function () {}
 
-function entry(data) {
+function prompt(calculator) {
 
-    let data = Number(prompt(`Type Number`, `!Number.isNaN`));
-    if (data != null) {
-        document.getElementById(`data`).innerHTML = `!Number.isNaN` ;
-    }
+    let = Num1 = prompt(`Type A Number`, ``);
 
-}
+    let = Num2 = prompt(`Type A Number`, ``);
 
-function entry(num) {
-    let num = 0;
-    if (input <= 9) {
-        console.log(num);
-        num = num + "input";
-    }
-}
+    let = operator = prompt(`Type A Operator`, ``);
 
-function addition(num) {
+    if (!Number.isNaN(Num1 + Num2)) {
 
-    let old = ``;
-    for (let add = ``;) {
+        document.getElementById("demo").innerHTML = Num1;
 
-        old + add; 
+        document.getElementById("demo").innerHTML = operator;
+
+        document.getElementById("demo").innerHTML = Num2;
+
+        document.write(`=` + Num1 + operator + Num2);
 
     }
+    
 }
 
-/*function subtraction(num) {
-
-}
-
-function multiplication(num) {
-
-}
-
-function division(num) {
-
-}
-
-prompt()
+/*prompt()
 
 alert()*/
-
-
-//console.log(()); here
-
-console.log(addition(0));
-
-//module.exports = ; here

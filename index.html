@@ -4,65 +4,51 @@
 
 <head>
 
-	<title>JS Exercise 1</title>
-    <script src="calculator.js"></script>
-    <link href="CSS.css" rel="stylesheet">
+    <title></title>
+    <script src=".js"></script>
+    <link href=".css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<h1>Calculator</h1>
+    <script>
 
-<button onclick="entry(data)" id="data">Type Here</button>
+        function prompt(calculator) {
 
- <form>
+            let = Num1 = prompt(`Type A Number`, ``);
 
-    <section class="Data">
-        
-    <label for="data"></label>
-    <input type="text" onclick="()"></section>
+            let = Num2 = prompt(`Type A Number`, ``);
 
-    <section class="1-5">
+            let = operator = prompt(`Type A Operator`, ``);
 
-    <button type="button"  class="button" id="num" value="1" onclick="(`1`)" onkeydown="">1</button>
-    <button type="button"  class="button" id="num" value="2" onclick="(`2`)" onkeydown="">2</button>
-    <button type="button"  class="button" id="num" value="3" onclick="(`3`)" onkeydown="">3</button>
-    <button type="button"  class="button" id="num" value="4" onclick="(`4`)" onkeydown="">4</button>
-    <button type="button"  class="button" id="num" value="5" onclick="(`5`)" onkeydown="">5</button>
+            if (!Number.isNaN(Num1 + Num2)) {
 
-    </section>
+                document.getElementById("demo").innerHTML = Num1;
 
-    <section class="6-0">
+                document.getElementById("demo").innerHTML = operator;
 
-    <button type="button"  class="button" id="num" value="6" onclick="(`6`)" onkeydown="">6</button>
-    <button type="button"  class="button" id="num" value="7" onclick="(`7`)" onkeydown="">7</button>
-    <button type="button"  class="button" id="num" value="8" onclick="(`8`)" onkeydown="">8</button>
-    <button type="button"  class="button" id="num" value="9" onclick="(`9`)" onkeydown="">9</button>
-    <button type="button"  class="button" id="num" value="0" onclick="(`0`)" onkeydown="">0</button>
+                document.getElementById("demo").innerHTML = Num2;
 
-    </section>
+                document.write(`=` + Num1 + operator + Num2);
 
-    <section class="Operator">
+            }
 
-    <button type="button"  class="button" id="num" value="." onclick="(`.`)" onkeydown="">.</button>
-    <button type="button"  class="button" id="operator" value="+" onclick="(`+`)" onkeydown="">+</button>
-    <button type="button"  class="button" id="operator" value="-" onclick="(`-`)" onkeydown="">-</button>
-    <button type="button"  class="button" id="operator" value="*" onclick="(`*`)" onkeydown="">*</button>
-    <button type="button"  class="button" id="operator" value="/" onclick="(`/`)" onkeydown="">/</button>
+        }
 
-    </section>
+    </script>
 
-    <section class="Power">
+    <button onclick="Number(prompt(Num1));">Num1</button>
+    <button onclick="Number(prompt(operator));">operator</button>
+    <button onclick="Number(prompt(Num2));">Num2</button>
+    <button onclick="Number(document.write(`=` + Num1 + operator + Num2));">=</button>
 
-    <button type="button"  class="button" id="C" value="C" onclick="(`C`)" onkeydown="">C</button>
-    <button type="button"  class="button" id="Del" value="Del" onclick="(`Del`)" onkeydown="">Del</button>
-    <button type="button"  class="button" id="Answer" value="" onclick="alert(`=`)" onkeydown="">=</button>
+    <p id="Num1"></p>
+    <p id="operator"></p>
+    <p id="Num2"></p>
 
-    </section>
 
- </form>
- 
+
 </body>
 
 
