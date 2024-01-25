@@ -5,7 +5,7 @@
 <head>
 
 	<title>JS Exercise 1</title>
-    <script type="calculator.js"></script>
+    <script src="calculator.js"></script>
     <link href="CSS.css" rel="stylesheet">
 
 </head>
@@ -19,36 +19,50 @@
  <form>
 
     <section class="Data">
+        
     <label for="data"></label>
     <input type="text" onclick="()"></section>
+
     <section class="1-5">
-    <button type="button" id="button" onclick="(num)">1</button>
-    <button type="button" id="button" onclick="(num)">2</button>
-    <button type="button" id="button" onclick="(num)">3</button>
-    <button type="button" id="button" onclick="(num)">4</button>
-    <button type="button" id="button" onclick="(num)">5</button>
+
+    <button type="button"  class="button" id="num" value="1" onclick="(`1`)" onkeydown="">1</button>
+    <button type="button"  class="button" id="num" value="2" onclick="(`2`)" onkeydown="">2</button>
+    <button type="button"  class="button" id="num" value="3" onclick="(`3`)" onkeydown="">3</button>
+    <button type="button"  class="button" id="num" value="4" onclick="(`4`)" onkeydown="">4</button>
+    <button type="button"  class="button" id="num" value="5" onclick="(`5`)" onkeydown="">5</button>
+
     </section>
+
     <section class="6-0">
-    <button type="button" id="button" onclick="(num)">6</button>
-    <button type="button" id="button" onclick="(num)">7</button>
-    <button type="button" id="button" onclick="(num)">8</button>
-    <button type="button" id="button" onclick="(num)">9</button>
-    <button type="button" id="button" onclick="(num)">0</button>
+
+    <button type="button"  class="button" id="num" value="6" onclick="(`6`)" onkeydown="">6</button>
+    <button type="button"  class="button" id="num" value="7" onclick="(`7`)" onkeydown="">7</button>
+    <button type="button"  class="button" id="num" value="8" onclick="(`8`)" onkeydown="">8</button>
+    <button type="button"  class="button" id="num" value="9" onclick="(`9`)" onkeydown="">9</button>
+    <button type="button"  class="button" id="num" value="0" onclick="(`0`)" onkeydown="">0</button>
+
     </section>
-    <section class="Non-Num">
-    <button type="button" id="button" onclick="()">.</button>
-    <button type="button" id="button" onclick="()">+</button>
-    <button type="button" id="button" onclick="()">-</button>
-    <button type="button" id="button" onclick="()">*</button>
-    <button type="button" id="button" onclick="()">/</button>
+
+    <section class="Operator">
+
+    <button type="button"  class="button" id="num" value="." onclick="(`.`)" onkeydown="">.</button>
+    <button type="button"  class="button" id="operator" value="+" onclick="(`+`)" onkeydown="">+</button>
+    <button type="button"  class="button" id="operator" value="-" onclick="(`-`)" onkeydown="">-</button>
+    <button type="button"  class="button" id="operator" value="*" onclick="(`*`)" onkeydown="">*</button>
+    <button type="button"  class="button" id="operator" value="/" onclick="(`/`)" onkeydown="">/</button>
+
     </section>
+
     <section class="Power">
-    <button type="button" id="button" onclick="()">C</button>
-    <button type="button" id="button" onclick="alert()">=</button>
+
+    <button type="button"  class="button" id="C" value="C" onclick="(`C`)" onkeydown="">C</button>
+    <button type="button"  class="button" id="Del" value="Del" onclick="(`Del`)" onkeydown="">Del</button>
+    <button type="button"  class="button" id="Answer" value="" onclick="alert(`=`)" onkeydown="">=</button>
+
     </section>
 
  </form>
-
+ 
 </body>
 
 

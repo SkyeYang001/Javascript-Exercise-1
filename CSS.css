@@ -2,8 +2,29 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width:;
 }
-#button {
-    width: 30px;
-    height: 30px;
+
+input[type="text"] { 
+    padding: 20px; 
+    font-size: 2em; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    border: 5px solid black; 
+} 
+
+.Power {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Power button {
+    
+}
+
+.button {
+    width: 35px;
+    height: 35px;
 }

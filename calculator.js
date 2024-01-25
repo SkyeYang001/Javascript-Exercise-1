@@ -2,9 +2,9 @@
 
 function entry(data) {
 
-    let data = Number(prompt("Type Number", "!Number.isNaN"));
+    let data = Number(prompt(`Type Number`, `!Number.isNaN`));
     if (data != null) {
-        document.getElementById("data").innerHTML = "!Number.isNaN" ;
+        document.getElementById(`data`).innerHTML = `!Number.isNaN` ;
     }
 
 }
