@@ -12,43 +12,40 @@
 
 <body>
 
-    <script>
-
-        function prompt(calculator) {
-
-            let = Num1 = prompt(`Type A Number`, ``);
-
-            let = Num2 = prompt(`Type A Number`, ``);
-
-            let = operator = prompt(`Type A Operator`, ``);
-
-            if (!Number.isNaN(Num1 + Num2)) {
-
-                document.getElementById("demo").innerHTML = Num1;
-
-                document.getElementById("demo").innerHTML = operator;
-
-                document.getElementById("demo").innerHTML = Num2;
-
-                document.write(`=` + Num1 + operator + Num2);
-
-            }
-
-        }
-
-    </script>
-
-    <button onclick="Number(prompt(Num1));">Num1</button>
-    <button onclick="Number(prompt(operator));">operator</button>
-    <button onclick="Number(prompt(Num2));">Num2</button>
+    <button onclick="Number(prompt(`Type A Number`));">Num1</button>
+    <button onclick="Number(prompt(`Type A Operator`));">operator</button>
+    <button onclick="Number(prompt(`Type A Number`));">Num2</button>
     <button onclick="Number(document.write(`=` + Num1 + operator + Num2));">=</button>
 
     <p id="Num1"></p>
     <p id="operator"></p>
     <p id="Num2"></p>
 
+    <script>
 
+        function calculator() {
 
+            let = Num1 = Number(prompt(`Type A Number`, ``));
+
+            let = Num2 = Number(prompt(`Type A Number`, ``));
+
+            let = operator = Number(prompt(`Type A Operator`, ``));
+
+            if (!Number.isNaN(Num1)) (!Number.isNaN(Num2))(+ || - || * || / === operator){
+
+            document.getElementById("Num1").innerHTML = Num1;
+
+            document.getElementById("operator").innerHTML = operator;
+
+            document.getElementById("Num2").innerHTML = Num2;
+
+            document.write(`=` + Num1 + operator + Num2);
+
+        }
+
+}
+
+    </script>
 </body>
 
 
